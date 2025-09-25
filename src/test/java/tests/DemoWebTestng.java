@@ -140,6 +140,18 @@ public class DemoWebTestng extends BasePage{
     }
 
     //Espacio para ingresar metodo de Screanshot
+    public static void take_screanshot(WebDriver driver) throws IOException {
+        //metodo para tomar captura de pantalla y que el nombre sea dinamico
+        //Genera un nombre unico con fecha y hora
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String filename = "Screanshot" + timestamp + ".png";
+
+        //Guardar la captura en una ubicacion especifica
+        File Scranshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File destinoFile = new File("ScreanShot" + filename);
+        FileUtils.copyFile(Scranshot, destinoFile);
+
+    }
 
     @Test(priority =2)
     public void DeleteAdressTest() throws InterruptedException {
