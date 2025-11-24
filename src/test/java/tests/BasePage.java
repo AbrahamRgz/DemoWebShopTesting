@@ -24,7 +24,8 @@ public class BasePage {
     public  BasePage (WebDriver driver){
         BasePage.driver = driver;
     }
-    //metodo para vanegar a la URL
+    
+    //metodo para navegar a la URL
     public static void navigateTo(String Url){
         driver.get(Url);
     }
