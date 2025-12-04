@@ -2,7 +2,6 @@ Este es un proyecto o practica bastante completo con mis estudios sobre automati
 El archivo principal es el que se llama DemoWebTestNg, o tambien se puede ejecutar la prueba directo desde el archivo testng.xml,
 A continuacion dejo las intrucciones con las que realize la practica:
 
-Nota:Deje comentada la funcion de los Screanshots, ya funciona solo que al probar muchas veces genere muchas imagenes.
 
 Pre condiciones.- Registrarse en el sitio DemoWebShop(ESto no se automatiza)
 
