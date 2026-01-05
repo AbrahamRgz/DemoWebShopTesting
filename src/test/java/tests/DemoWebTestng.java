@@ -120,7 +120,7 @@ public class DemoWebTestng extends BasePage{
         String total = GetText("//span[@class='product-price order-total']");
         double total2 = Double.parseDouble(total);
 
-        Assert.assertEquals(compra,total2);
+        Assert.assertEquals(compra,total2,1e-6);
         clickElemnt("//input[@value='Confirm']");
         take_screanshot(driver);
 
